@@ -1,0 +1,11 @@
+C:\Users\ms kang\source\repos\winform_client\winform_client\bin\Debug\winform_client.exe.config
+C:\Users\ms kang\source\repos\winform_client\winform_client\bin\Debug\winform_client.exe
+C:\Users\ms kang\source\repos\winform_client\winform_client\bin\Debug\winform_client.pdb
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.csprojAssemblyReference.cache
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.Client.resources
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.Modal_Client.resources
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.Properties.Resources.resources
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.csproj.GenerateResource.cache
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.csproj.CoreCompileInputs.cache
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.exe
+C:\Users\ms kang\source\repos\winform_client\winform_client\obj\Debug\winform_client.pdb
