@@ -1,6 +1,8 @@
 # SocketCanvas
 다중 소켓 통신을 이용하여 그림 데이터를 공유해 동시에 여러 사용자가 그림을 그릴 수 있는 세계그림판 프로그램
 
+그림판 기능, 다중 클라이언트와의 통신, 화면 조작, 채팅으로 총 4가지 기능으로 이루어져 있습니다.
+
 1. 폼 구성
 
 서버 열기
@@ -23,23 +25,29 @@
 
 All_Shapes
 
-![image](https://user-images.githubusercontent.com/53392870/81657488-e0632d00-9472-11ea-886e-3dd7d25e4660.png)
+![image](https://user-images.githubusercontent.com/53392870/81657488-e0632d00-9472-11ea-886e-3dd7d25e4660.png) ![image](https://user-images.githubusercontent.com/53392870/81657508-e48f4a80-9472-11ea-95c2-694906c4c067.png)
 
-![image](https://user-images.githubusercontent.com/53392870/81657508-e48f4a80-9472-11ea-95c2-694906c4c067.png)
-
-![image](https://user-images.githubusercontent.com/53392870/81657523-e6f1a480-9472-11ea-836a-7c334e2c737e.png)
-
-![image](https://user-images.githubusercontent.com/53392870/81657536-ea852b80-9472-11ea-8ab9-05b83ba4bd5c.png)
+![image](https://user-images.githubusercontent.com/53392870/81657523-e6f1a480-9472-11ea-836a-7c334e2c737e.png) ![image](https://user-images.githubusercontent.com/53392870/81657536-ea852b80-9472-11ea-8ab9-05b83ba4bd5c.png)
 
 ![image](https://user-images.githubusercontent.com/53392870/81657547-ec4eef00-9472-11ea-9c12-1d89399cc7d5.png)
 
+
+3. 다중 클라이언트 구현
+
+다중 클라이언트에게 그림판의 화면을 전송할 수 있다.
+
 ![image](https://user-images.githubusercontent.com/53392870/81657559-eeb14900-9472-11ea-8e23-f3e922452ddc.png)
+
 
 ![image](https://user-images.githubusercontent.com/53392870/81657577-f1ac3980-9472-11ea-9cc9-cca3d77efeba.png)
 
+<서버에서 클라이언트에게 받은 데이터를 다른 클라이언트에게 전송한다>
+
 ![image](https://user-images.githubusercontent.com/53392870/81657588-f375fd00-9472-11ea-85f3-71f2ca1a2284.png)
 
-3. 화면조작
+<클라이언트에서 서버에게 데이터를 받았을 때 처리하는 부분>
+
+4. 화면조작
 
 기존화면
 
@@ -69,6 +77,6 @@ All_Shapes
 
 ![image](https://user-images.githubusercontent.com/53392870/81657676-04bf0980-9473-11ea-9710-0770bd4342da.png)
 
-채팅
+5. 채팅
 
 ![image](https://user-images.githubusercontent.com/53392870/81657688-07b9fa00-9473-11ea-9703-884f6033e723.png)
