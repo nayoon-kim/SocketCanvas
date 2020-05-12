@@ -1,6 +1,8 @@
 # SocketCanvas
 다중 소켓 통신을 이용하여 그림 데이터를 공유해 동시에 여러 사용자가 그림을 그릴 수 있는 세계그림판 프로그램
 
+C#, Winform 
+
 그림판 기능, 다중 클라이언트와의 통신, 화면 조작, 채팅으로 총 4가지 기능으로 이루어져 있습니다.
 
 1. 폼 구성
@@ -23,14 +25,21 @@
 
 ![image](https://user-images.githubusercontent.com/53392870/81657459-da6d4c00-9472-11ea-919d-f7005563d61a.png)
 
-All_Shapes
+Panel_MouseMove, MouseUp
 
 ![image](https://user-images.githubusercontent.com/53392870/81657488-e0632d00-9472-11ea-886e-3dd7d25e4660.png) ![image](https://user-images.githubusercontent.com/53392870/81657508-e48f4a80-9472-11ea-95c2-694906c4c067.png)
 
+DataReceived
+
 ![image](https://user-images.githubusercontent.com/53392870/81657523-e6f1a480-9472-11ea-836a-7c334e2c737e.png) ![image](https://user-images.githubusercontent.com/53392870/81657536-ea852b80-9472-11ea-8ab9-05b83ba4bd5c.png)
+
+obj.WorkingSocket이라는 socket 객체를 통해서 비동기적으로 데이터를 받고 받은 데이터를 byte의 앞부분 4부분만 따서 text일 경우에는 채팅 데이터이므로 데이터를 string으로 처리하고 그렇지 않을 경우에는 All_Shapes이므로 도형으로 그림을 처리한다.
+
+InitSocket
 
 ![image](https://user-images.githubusercontent.com/53392870/81657547-ec4eef00-9472-11ea-9c12-1d89399cc7d5.png)
 
+<mainSock는 socket 객체이고 클라이언트는 이 socket을 통해서 서버와 통신하는데 비동기 소켓 통신을 진행할 것이다. 따라서 BeginReceive라는 메소드를 사용하여서 데이터를 받게 되면 언제든지 데이터 통신을 기다리는 DataReceived 메소드를 실행한다.>
 
 3. 다중 클라이언트 구현
 
