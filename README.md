@@ -34,10 +34,13 @@ All_Shapes
 
 3. 다중 클라이언트 구현
 
-다중 클라이언트에게 그림판의 화면을 전송할 수 있다.
+<다중 클라이언트에게 그림판의 화면을 전송할 수 있다>
 
 ![image](https://user-images.githubusercontent.com/53392870/81657559-eeb14900-9472-11ea-8e23-f3e922452ddc.png)
 
+![image](https://user-images.githubusercontent.com/53392870/81657676-04bf0980-9473-11ea-9710-0770bd4342da.png)
+
+<Mouse-Up을 하였을 경우 클라이언트에서 서버로 데이터를 전송한다>
 
 ![image](https://user-images.githubusercontent.com/53392870/81657577-f1ac3980-9472-11ea-9cc9-cca3d77efeba.png)
 
@@ -45,7 +48,7 @@ All_Shapes
 
 ![image](https://user-images.githubusercontent.com/53392870/81657588-f375fd00-9472-11ea-85f3-71f2ca1a2284.png)
 
-<클라이언트에서 서버에게 데이터를 받았을 때 처리하는 부분>
+<클라이언트에서 서버에게 데이터를 받고 처리한다.>
 
 4. 화면조작
 
@@ -57,25 +60,28 @@ All_Shapes
 
 ![image](https://user-images.githubusercontent.com/53392870/81657614-f83ab100-9472-11ea-8eed-bd93af15587c.png)
 
-마우스 스크롤에 의해서 변화하게 됨
-
-![image](https://user-images.githubusercontent.com/53392870/81657623-fa9d0b00-9472-11ea-96d9-bc5c509ef825.png)
-
-(setSize -> MyRect)
-
-![image](https://user-images.githubusercontent.com/53392870/81657637-fcff6500-9472-11ea-868a-c9077296d8dd.png)
-
-(MouseWheel)
-
-![image](https://user-images.githubusercontent.com/53392870/81657645-fec92880-9472-11ea-8102-d5ace7401f9f.png)
-
-(조작하고자 하는 클라이언트 외에 다른 클라이언트에는 화면 조작이 되지 않도록 함)
+화면 조작 중인 클라이언트와 그렇지 않은 클라이언트
 
 ![image](https://user-images.githubusercontent.com/53392870/81657662-025caf80-9473-11ea-810f-c9b934307ea9.png)
 
-(mouse up하였을 경우 서버로 데이터 넘어감)
+panel_MouseWheel
 
-![image](https://user-images.githubusercontent.com/53392870/81657676-04bf0980-9473-11ea-9710-0770bd4342da.png)
+![image](https://user-images.githubusercontent.com/53392870/81657623-fa9d0b00-9472-11ea-96d9-bc5c509ef825.png)
+
+<Wheel을 위로 올리면 축소> -> 0.9 비율로 축소 + wheel_line도 축소됨
+
+<Wheel을 아래로 내리면 확대> -> 1.1 비율로 확대 + wheel_line도 확대됨
+
+panel_MouseWheel
+
+![image](https://user-images.githubusercontent.com/53392870/81657645-fec92880-9472-11ea-8102-d5ace7401f9f.png)
+
+<위의 코드는 각각의 All_Shapes의 자식 클래스들이 type에 따라 setSize를 구현하게 된다.>
+
+setSize
+
+![image](https://user-images.githubusercontent.com/53392870/81657637-fcff6500-9472-11ea-868a-c9077296d8dd.png)
+
 
 5. 채팅
 
